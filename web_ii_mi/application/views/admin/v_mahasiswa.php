@@ -20,8 +20,9 @@
 						<td><?php echo $key->program_studi; ?></td>
 						<td><?php echo date('d M Y', strtotime($key->created_at) ); ?></td>
 						<td>
-						<a href="" class="btn btn-primary btn-sm">Edit</a> 
-						<a href="" class="btn btn-danger btn-sm">Hapus</a> 
+						<a href="<?php echo site_url('admin/Mahasiswa/edit/'.$key->nim); ?>" class="btn btn-primary btn-sm">Edit</a> 
+						<a href="<?php echo site_url('admin/Mahasiswa/hapus/'.$key->nim); ?>" 
+						class="btn btn-danger btn-sm" onclick="return confirm('Hapus Data?');" >Hapus</a> 
 
 						</td>
 						
