@@ -20,8 +20,9 @@
 						<td><?php echo $key->alamat; ?></td>
 						<td><?php echo date('d M Y', strtotime($key->created_at) ); ?></td>
 						<td>
-						<a href="" class="btn btn-primary btn-sm">Edit</a> 
-						<a href="" class="btn btn-danger btn-sm">Hapus</a> 
+						<a href="<?php echo site_url('admin/Dosen/edit/'.$key->nik); ?>" class="btn btn-primary btn-sm">Edit</a> 
+						<a href="<?php echo site_url('admin/Dosen/hapus/'.$key->nik); ?>" class="btn btn-danger btn-sm" 
+						onclick="return confirm('Hapus Data?');">Hapus</a> 
 
 						</td>
 						
